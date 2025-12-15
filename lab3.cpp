@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main () {
-	int score;
+	int score, more;
+	
 	
 	scanf("%d",&score);
 	
@@ -12,7 +13,8 @@ int main () {
 			if (score >= 75){
 				printf("B");
 			}else{
-				printf("C");
+				more = 75 - score;
+				printf("C \nYou Need More %d to B", more);
 			}
 		}
 	} else {
